@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<nav>
+    <ul>
+        <li>Portfolio Page</li>
+        <li><a href="">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="">Home</a></li>
+    </ul>
+</nav>
+<body>
+    
+<div class="flex-container">
+    <div class="flex-item"><h1>We are an Independent Web Development Team in Kaduna,Nigeria</h1>
+        <br>
+        <input type="button" id="myBtn" value="Learn More" class="btt">
+        </div>
+        <!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+<div class="modal-header">
+  <span class="close">×</span>
+  <h2>I'm Tijani Ahmed Maji</h2>
+</div>
+<div class="modal-body">
+    <h3>
+  <p>Web Developer <br>
+    .HTML <br>
+    .CSS
+</p>
+    </h3>
+    <h4>
+  <p>Student Of Ahmadu Bello University, Zaria.
+      <br>
+      Currently an Intern at KAD ICT HUB
+  </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur delectus, fuga corporis at ipsa quo! A corporis debitis sapiente laborum earum. In expedita inventore quibusdam amet, autem provident recusandae eius?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed necessitatibus accusamus modi dolorum consequuntur doloribus ipsa ut optio fugiat. Nemo, consectetur culpa! Harum excepturi officia, eligendi voluptate natus recusandae ipsum!</p>
+  </h4>
+</div>
+<div class="modal-footer">
+  <h3>&copy;</h3>
+</div>
+</div>
+
+</div></div>
+    <!-- <div class="flex-item">flex item 2</div>  
+  </div> -->
+
+  <div class="flex-container">
+    <div class="flex-item "><form>
+        <div class="first">
+            <div class="second">
+                <div class="contact-form">
+                    <div class="form-input">
+                        <input type="Name" placeholder="Name">
+                    </div>
+                    <div class="form-input">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="form-message">
+                        <input type="textarea" placeholder="Message">
+                    </div>
+                    <input type="button" value="SEND" class="btt" onclick="alert('Message Sent')">
+                  </div>
+            </div>
+        </form></div>
+    <div class="flex-item "> <div class="third">
+        <div id="contact">
+            <div class="address">
+                <h3>Address</h3>
+                No.3 Makarafi Road, Millinieum City
+                
+            </div>
+            <div class="Email">
+                <h3>Email</h3>
+                <a href="mailto:majiahmed@outlook">majiahmed@outlook.com</a>
+  
+            </div>
+            <div class="phone">
+                <h3>Call Us.</h3>
+                <a href="tel:+2348092864262">+2348092864262</a>
+  
+            </div>
+        </div>
+    </div>
+</div></div>  
+  </div>
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</html>
